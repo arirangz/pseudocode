@@ -1,0 +1,10 @@
+DECLARE Age : INTEGER
+
+OUTPUT "Enter your age to play our game"
+INPUT Age
+
+IF Age >= 18 THEN
+    OUTPUT "Loading game..."
+ELSE
+    OUTPUT "Your are not allowed"
+ENDIF

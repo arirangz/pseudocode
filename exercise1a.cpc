@@ -1,0 +1,4 @@
+DECLARE Country : STRING
+OUTPUT "What is your country?"
+INPUT Country
+OUTPUT "You country is", Country
