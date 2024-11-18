@@ -1,0 +1,32 @@
+DECLARE Number1 : REAL
+DECLARE Number2 : REAL
+DECLARE Operation : STRING
+DECLARE Result : REAL
+
+OUTPUT "Please enter the first number"
+INPUT Number1
+
+OUTPUT "Please enter the second number"
+INPUT Number2
+
+OUTPUT "Enter the operation (+, -, *, /)"
+INPUT Operation
+
+IF Operation = "+" THEN
+    Result <- Number1 + Number2
+ENDIF
+IF Operation = "-" THEN
+    Result <- Number1 - Number2
+ENDIF
+IF Operation = "*" THEN
+    Result <- Number1 * Number2
+ENDIF
+IF Operation = "/" THEN
+    IF Number2 <> 0 THEN
+        Result <- Number1 / Number2
+    ELSE
+        OUTPUT "Error: Division by zero"
+    ENDIF
+ENDIF
+
+OUTPUT "THe result is", Result

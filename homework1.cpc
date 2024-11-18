@@ -1,0 +1,10 @@
+DECLARE UserAnswer : STRING
+
+OUTPUT "What is the capital city of Japan?"
+INPUT UserAnswer
+
+IF UserAnswer = "tokyo" OR UserAnswer = "Tokyo"  THEN
+    OUTPUT "Correct"
+ELSE
+    OUTPUT "Incorrect"
+ENDIF
