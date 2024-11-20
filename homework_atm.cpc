@@ -1,0 +1,32 @@
+DECLARE CorrectPin : INTEGER
+DECLARE UserPin : INTEGER
+DECLARE UserBalance : REAL
+DECLARE AccountBalance : REAL
+DECLARE AttemptsLeft : INTEGER
+
+CorrectPin <- 5566
+AttemptsLeft <- 3
+AccountBalance <- 435
+
+REPEAT
+    OUTPUT "Please enter your pin"
+    INPUT UserPin
+    AttemptsLeft <- AttemptsLeft - 1
+
+    IF UserPin = CorrectPin THEN
+        OUTPUT "Enter the amount"
+        INPUT UserBalance
+        IF UserBalance <= AccountBalance THEN
+            OUTPUT "Please take your money"
+        ELSE
+            OUTPUT "Not enought balance"
+        ENDIF
+    ELSE
+        OUTPUT "Incorrect pin"
+    ENDIF
+
+UNTIL UserPin = CorrectPin OR AttemptsLeft = 0
+
+IF AttemptsLeft = 0 AND UserPin <> CorrectPin THEN
+    OUTPUT "Too many attempts. Card blocked."
+ENDIF
