@@ -1,0 +1,20 @@
+DECLARE Password1 : STRING
+DECLARE Password2 : STRING
+
+OUTPUT "Please enter your new password"
+INPUT Password1
+
+REPEAT
+    OUTPUT "Please re-enter your password or presss Enter to stop"
+    INPUT Password2
+
+    IF Password1 = Password2 THEN
+        OUTPUT "Password changed"
+    ELSE
+        OUTPUT "The two password are different"
+    ENDIF
+UNTIL Password1 = Password2 OR Password2 = ""
+
+IF Password2 = "" THEN
+    OUTPUT "Your password has not been changed"
+ENDIF

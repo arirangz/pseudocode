@@ -1,5 +1,3 @@
-DECLARE Firstname : STRING
-OUTPUT "Hello, please enter your name: "
-INPUT Firstname
-OUTPUT "Welcome", Firstname
-
+DECLARE MyNumber : INTEGER
+MyNumber <- RAND(5)
+OUTPUT MyNumber

@@ -1,0 +1,10 @@
+DECLARE Age : INTEGER
+
+OUTPUT "Enter your age"
+INPUT Age
+
+IF XXX THEN
+    OUTPUT "You are an adult"
+ELSE
+    OUTPUT "You are a child"
+ENDIF

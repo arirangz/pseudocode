@@ -1,0 +1,15 @@
+DECLARE CorrectNumber : INTEGER
+DECLARE UserNumber : INTEGER
+CorrectNumber <- RAND(10)
+
+REPEAT
+    OUTPUT "Guess a number between 0 and 10"
+    INPUT UserNumber
+    IF UserNumber > CorrectNumber THEN
+        OUTPUT "Your number is too big"
+    ENDIF
+    IF UserNumber < CorrectNumber THEN
+        OUTPUT "Your number is too small"
+    ENDIF
+UNTIL UserNumber = CorrectNumber
+OUTPUT "Congratulation"
