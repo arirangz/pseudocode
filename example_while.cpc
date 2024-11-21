@@ -1,0 +1,11 @@
+DECLARE Name : STRING
+
+OUTPUT "Give your name"
+INPUT Name
+
+WHILE Name = "John"
+    OUTPUT "You are John"
+    INPUT Name
+ENDWHILE
+
+OUTPUT "End of the program"
