@@ -1,0 +1,17 @@
+DECLARE Games : ARRAY[0:2, 0:1] OF STRING
+DECLARE Rating : STRING
+
+Games[0, 0] <- "GTA V"
+Games[1, 0] <- "Mini Militia"
+Games[2, 0] <- "Rocket League"
+
+FOR Index <- 0 TO 2
+    OUTPUT "Enter the rate for", Games[Index, 0]
+    INPUT Rating
+    Games[Index, 1] <- Rating
+NEXT Index
+
+// FOR loop to display each game with the rate
+FOR Index <- 0 TO 2
+    OUTPUT "Rate for",Games[Index, 0], "is:", Games[Index, 1]
+NEXT Index

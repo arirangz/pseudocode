@@ -7,3 +7,6 @@ Countries[1,0] <- "Nepal"
 Countries[1,1] <- "Katmandou"
 Countries[1,2] <- "30M"
 
+FOR Index <- 0 TO 1
+    OUTPUT "Country name:", Countries[Index, 0]
+NEXT Index
